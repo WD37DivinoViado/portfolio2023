@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100vw;
+}
+/*NAVBAR*/
+nav.navbar{
+    padding: 10px 20px;
+    display: flex;
+}
+nav.navbar form.container-fluid ul{
+    list-style: none;
+}
+nav.navbar form.container-fluid li{
+    display: list-item;
+}
+nav.navbar form.container-fluid li:hover a{
+    background-color: skyblue;
+    border-radius: 7px;
+}
+/*NAVBARMEDIA*/
+    @media only screen and (max-width: 600px){
+        nav.nav-bar{
+            justify-content:space-between;
+        }
+    }
+/*HERO*/
+section#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/public/asset/image/divino01.jpg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+section#hero div.heroText p{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+section#hero div.heroText h1{
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+}
+section#hero div.heroText h5{
+    text-align: center;
+}
+/*HEROMEDIA*/
+    @media only screen and (max-width: 600px){
+        section#hero{
+            background-image: none;
+            height: 100vh;
+        }
+        
+    }
+section#about{
+    width: 100%;
+}
+section#about div.aboutHero{
+    width: 100%;
+    background-color: #ccc;
+}
+section#about div.aboutHero p{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin: 0;
+}
+section#about div.aboutHero h2{
+    margin: 0 30px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+}
+section#about div.aboutHero h4{
+    text-align: center;
+    margin: 0 30px;
+}
